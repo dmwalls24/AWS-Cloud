@@ -98,6 +98,9 @@ def recommend_portfolio(intent_request):
         # for the first violation detected.
 
         ### YOUR DATA VALIDATION CODE STARTS HERE ###
+        
+        slots = get_slots(intent_request)
+        validation_result = validate_data(age, investment_amount, intent_request)
 
         ### YOUR DATA VALIDATION CODE ENDS HERE ###
 
